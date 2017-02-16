@@ -5,6 +5,9 @@ module.exports.register = function() {
 
     var endpoints = [
         ["get", "/admin/list"],
+        ["post", "/admin/add"],
+        ["post", "/admin/update/rank"],
+        ["post", "/admin/update/password"],
         ["post", "/admin/delete"],
 
         ["post", "/login/get"],

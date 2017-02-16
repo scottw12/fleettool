@@ -19,13 +19,13 @@ module.exports.start_auth = function() {
     console.log("Booting auth system...");
 
     //Insert the dev token.
-    if (false) {
-        AuthCache.set("wcj", {
+    if (process.env.DEBUG_AUTH === "TRUE") {
+        AuthCache.set("dev-auth-token", {
             "valid": true,
-            "ident": "Peacekeeper-Dev",
+            "ident": "MOON Developer",
             "id": 1,
-            "rank": 100,
-            "token": "wcj"
+            "rank": 10,
+            "token": "dev-auth-token"
         });
     }
 };
